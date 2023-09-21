@@ -26,6 +26,6 @@ app.get('/productos', (req, resp) => {
     resp.sendFile(`${__dirname}/cliente/buttons.html`)
 })
 
-server.listen(3000,() => {
-    console.log('Servidor corriendo en http://localhost:3000')
+server.listen(8000,() => {
+    console.log('Servidor corriendo en http://localhost:8000')
 })
