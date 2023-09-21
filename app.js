@@ -18,9 +18,13 @@ io.on('connection', (socket) => {
 })
 
 
-app.get('/', (req, resp) => {
+app.get('/clientes', (req, resp) => {
     resp.sendFile(`${__dirname}/cliente/chat_view.html`)
 })//__dirname cada peticion envia el index .html
+
+app.get('/productos', (req, resp) => {
+    resp.sendFile(`${__dirname}/cliente/buttons.html`)
+})
 
 server.listen(3000,() => {
     console.log('Servidor corriendo en http://localhost:3000')
